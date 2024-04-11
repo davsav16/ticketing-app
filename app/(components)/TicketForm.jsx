@@ -33,7 +33,6 @@ const TicketForm = ({ ticket }) => {
       } else {
         router.push("/");
         router.refresh();
-        console.log("Ticket updated");
       }
     } else {
       const res = await fetch("/api/Tickets", {
@@ -49,7 +48,6 @@ const TicketForm = ({ ticket }) => {
       } else {
         router.push("/");
         router.refresh();
-        console.log("Ticket created");
       }
     }
   };
